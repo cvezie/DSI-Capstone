@@ -167,7 +167,10 @@ def cluster_range(X, range_n_clusters):
         plt.suptitle(("Silhouette analysis for KMeans clustering on sample data "
                       "with n_clusters = %d" % n_clusters),
                      fontsize=14, fontweight='bold')
-
+    return fig
+        
+    
+    
 def _transform_selected(X, transform, selected="all", copy=True,
                         retain_ordering=False):
     """Apply a transform function to portion of selected features
