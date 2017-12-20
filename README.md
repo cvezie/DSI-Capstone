@@ -11,7 +11,7 @@ For my project, I use data collected through the CTR program to evaluate the ben
 
 I formulated this question as a regression problem where the feature, `Alone_Share`, is the target. `Alone_Share` includes single occupancy vehicle drivers but does not include solo motorcycle drivers.
 
-$$Alone Share = \frac{Weekly Drive Alone Trips}{Total Weekly Trips}$$
+Alone Share = Weekly Drive Alone Trips/Total Weekly Trips
 
 #### `program_report_data`:
 This table contains information regarding the benefits offered to employees by individual employers. Additional data includes how much money a company spends on those benefits, how and how often information about commuting program is distributed, and number of employees taking advantage of the individual subsidies offered to them.
@@ -28,6 +28,12 @@ There are 1182 rows containing data from companies in Seattle, WA but there are 
 * BayesianRidge: 0.967083
 * DecisionTree: 0.914122
 * KNN: 0.799720
+
+## Final Model Score
+* LassoCV: 0.971045
+* BayesianRidgeRegressor: 0.964379
+* DecisionTree: 0.903892
+* KNN: 0.664433
 
 ## Project Roadmap
 1. Load data from csv files
