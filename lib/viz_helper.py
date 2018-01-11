@@ -26,13 +26,13 @@ def pca_results(good_data, pca):
 	variance_ratios.index = dimensions
 
 	# Create a bar plot visualization
-	fig, ax = plt.subplots(figsize = (150,75))
+	fig, ax = plt.subplots(figsize = (125,100))
 
 	# Plot the feature weights as a function of the components
 	components.plot(ax=ax, kind='bar', colormap='tab20');
 	ax.set_ylabel("Feature Weights", fontsize=60)
 	ax.set_xticklabels(dimensions, rotation=40, fontsize=60)
-	ax.legend(ncol=3, loc=3, fontsize=60)
+	ax.legend(ncol=4, loc=3, fontsize=60)
 
 
 	# Display the explained variance ratios
